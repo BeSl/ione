@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.17">
+	<ConfigVersions>
+		<Metadata name="Catalog.Промты" id="12d654d6-77e2-49c6-a33a-a13764ff8c96" configVersion="cfa81ffbe7659847aeb8f6f98d555eb600000000">
+			<Metadata name="Catalog.Промты.Attribute.ТекстПромта" id="67431eb9-f000-49b6-8c2a-0cb3595cc2ca"/>
+		</Metadata>
+		<Metadata name="Catalog.СерверыLLM" id="45f37c62-aacf-4a51-8deb-a2ba17852684" configVersion="33df1b075317d5449c277cd84689b25700000000">
+			<Metadata name="Catalog.СерверыLLM.Attribute.Сервер" id="1436a8f6-1ad5-43ce-8634-31a41ab6df0c"/>
+			<Metadata name="Catalog.СерверыLLM.Attribute.Порт" id="1e0374be-91f8-4e5b-8123-c6fa742002cb"/>
+			<Metadata name="Catalog.СерверыLLM.Attribute.ТипСервера" id="ce74d7f1-681e-4ab0-8b21-982787ae260d"/>
+		</Metadata>
+		<Metadata name="Catalog.СерверыLLM.ManagerModule" id="45f37c62-aacf-4a51-8deb-a2ba17852684.3" configVersion="4035966a098f6246b5a16f9dd767c81c00000000"/>
+		<Metadata name="CommonModule.ВзаимодействиеСLLM" id="dbb66699-f795-41ec-a725-e6ce00316d14" configVersion="b9978c17ded39f4b947f6dd3fbdea4e200000000"/>
+		<Metadata name="CommonModule.ВзаимодействиеСLLM.Module" id="dbb66699-f795-41ec-a725-e6ce00316d14.0" configVersion="d081ddeeeb43f4479ee9c3aaea07fcce00000000"/>
+		<Metadata name="CommonModule.КоннекторHTTP" id="a5ae6168-110b-494f-8bd5-3ef44c23b6f4" configVersion="59aa286be039684f909385982d269dcf00000000"/>
+		<Metadata name="CommonModule.КоннекторHTTP.Module" id="a5ae6168-110b-494f-8bd5-3ef44c23b6f4.0" configVersion="c5007b1d983b6245b4462e9b37140eb000000000"/>
+		<Metadata name="Configuration.Конфигурация" id="63307daa-f410-4b15-942b-1e5d4795ad41" configVersion="ba31aeb3aebf7546bf2da93ea084f7c300000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="7b89627d-8559-4942-83cf-f762f5c5cedd.8" configVersion="dc2a2f177bd1664dbc405e2736656a9a00000000"/>
+		<Metadata name="DataProcessor.БазовыеНастройки" id="a31b78df-22f9-49e5-8c6f-d9e664c00740" configVersion="823984149a5a5f4ca54a8f8865f2727100000000"/>
+		<Metadata name="DataProcessor.БазовыеНастройки.Form.Форма" id="e583fc8e-d8be-4b6a-b5e2-2658a9bab39c" configVersion="3b3b372b2f91774e821e7600836892d900000000"/>
+		<Metadata name="DataProcessor.БазовыеНастройки.Form.Форма.Form" id="e583fc8e-d8be-4b6a-b5e2-2658a9bab39c.0" configVersion="ab7322a913ae3644a2c80d3d692e4cd900000000"/>
+		<Metadata name="DataProcessor.БотLLM" id="60a4c255-e2d8-43bf-996b-3f069e0464f2" configVersion="71fb12828c1d684f88413e79f1718de700000000"/>
+		<Metadata name="DataProcessor.БотLLM.Form.Форма" id="6f7e4bf2-57fd-4ef5-b9d4-ba556eac9130" configVersion="3b8761c1f5881e4dbef7b13e87b793a400000000"/>
+		<Metadata name="DataProcessor.БотLLM.Form.Форма.Form" id="6f7e4bf2-57fd-4ef5-b9d4-ba556eac9130.0" configVersion="b7d774909e9a7244a98735376021352d00000000"/>
+		<Metadata name="DataProcessor.БотLLM.ManagerModule" id="60a4c255-e2d8-43bf-996b-3f069e0464f2.2" configVersion="d54fc69a5fe623498cc1b1006b7933ec00000000"/>
+		<Metadata name="DataProcessor.ЧатLLM" id="6a40a603-9ac0-41bc-9fb1-59e8485d6fa4" configVersion="27b74ceb6f8a2148abc6d97d8ac3b1af00000000"/>
+		<Metadata name="Enum.ТипыСерверовLLM" id="3fe2feb1-dd0f-4e58-b44b-3eb81e99dcd6" configVersion="3c717eeea3a63b47920dc5c3bd8e0cb900000000">
+			<Metadata name="Enum.ТипыСерверовLLM.EnumValue.ollama" id="4bbb3118-49d1-4236-b9d1-cc288a7a2bdc"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="4f7f04cf-54d9-4c60-9fc0-fbf345647d64" configVersion="fc2030366cd3094683dd57dc6e3c320000000000"/>
+		<Metadata name="Subsystem.АдминДиалог" id="9204c293-352f-4425-9218-6c04e16359d2" configVersion="1c8382044bc2b3479679585d406d900800000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

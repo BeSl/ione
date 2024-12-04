@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="СерверLLM" id="69">
+			<DataPath>СерверLLM</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СерверLLMКонтекстноеМеню" id="70"/>
+			<ExtendedTooltip name="СерверLLMРасширеннаяПодсказка" id="71"/>
+			<Events>
+				<Event name="OnChange">СерверLLMПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="Группа3" id="72">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<Page name="ГруппаНастройки" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступные методы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<Table name="МетодыLLM" id="18">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>МетодыLLM</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="МетодыLLMКонтекстноеМеню" id="19"/>
+									<AutoCommandBar name="МетодыLLMКоманднаяПанель" id="20"/>
+									<ExtendedTooltip name="МетодыLLMРасширеннаяПодсказка" id="21"/>
+									<SearchStringAddition name="МетодыLLMСтрокаПоиска" id="22">
+										<AdditionSource>
+											<Item>МетодыLLM</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="МетодыLLMСтрокаПоискаКонтекстноеМеню" id="23"/>
+										<ExtendedTooltip name="МетодыLLMСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="МетодыLLMСостояниеПросмотра" id="25">
+										<AdditionSource>
+											<Item>МетодыLLM</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="МетодыLLMСостояниеПросмотраКонтекстноеМеню" id="26"/>
+										<ExtendedTooltip name="МетодыLLMСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="МетодыLLMУправлениеПоиском" id="28">
+										<AdditionSource>
+											<Item>МетодыLLM</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="МетодыLLMУправлениеПоискомКонтекстноеМеню" id="29"/>
+										<ExtendedTooltip name="МетодыLLMУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">МетодыLLMПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="МетодыLLMНаименование" id="31">
+											<DataPath>МетодыLLM.Наименование</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МетодыLLMНаименованиеКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="МетодыLLMНаименованиеРасширеннаяПодсказка" id="33"/>
+										</InputField>
+										<InputField name="МетодыLLMТипЗапроса" id="34">
+											<DataPath>МетодыLLM.ТипЗапроса</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МетодыLLMТипЗапросаКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="МетодыLLMТипЗапросаРасширеннаяПодсказка" id="36"/>
+										</InputField>
+										<InputField name="МетодыLLMПуть" id="37">
+											<DataPath>МетодыLLM.Путь</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МетодыLLMПутьКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="МетодыLLMПутьРасширеннаяПодсказка" id="39"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="МетодыLLMПараметры" id="40">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Items.МетодыLLM.CurrentData.Параметры</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="МетодыLLMПараметрыКонтекстноеМеню" id="41"/>
+									<AutoCommandBar name="МетодыLLMПараметрыКоманднаяПанель" id="42"/>
+									<ExtendedTooltip name="МетодыLLMПараметрыРасширеннаяПодсказка" id="43"/>
+									<SearchStringAddition name="МетодыLLMПараметрыСтрокаПоиска" id="44">
+										<AdditionSource>
+											<Item>МетодыLLMПараметры</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="МетодыLLMПараметрыСтрокаПоискаКонтекстноеМеню" id="45"/>
+										<ExtendedTooltip name="МетодыLLMПараметрыСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="МетодыLLMПараметрыСостояниеПросмотра" id="47">
+										<AdditionSource>
+											<Item>МетодыLLMПараметры</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="МетодыLLMПараметрыСостояниеПросмотраКонтекстноеМеню" id="48"/>
+										<ExtendedTooltip name="МетодыLLMПараметрыСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="МетодыLLMПараметрыУправлениеПоиском" id="50">
+										<AdditionSource>
+											<Item>МетодыLLMПараметры</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="МетодыLLMПараметрыУправлениеПоискомКонтекстноеМеню" id="51"/>
+										<ExtendedTooltip name="МетодыLLMПараметрыУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="МетодыLLMПараметрыИмяПараметра" id="53">
+											<DataPath>Items.МетодыLLM.CurrentData.Параметры.ИмяПараметра</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МетодыLLMПараметрыИмяПараметраКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="МетодыLLMПараметрыИмяПараметраРасширеннаяПодсказка" id="55"/>
+										</InputField>
+										<CheckBoxField name="МетодыLLMПараметрыОбязательный" id="56">
+											<DataPath>Items.МетодыLLM.CurrentData.Параметры.Обязательный</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="МетодыLLMПараметрыОбязательныйКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="МетодыLLMПараметрыОбязательныйРасширеннаяПодсказка" id="58"/>
+										</CheckBoxField>
+										<InputField name="МетодыLLMПараметрыЗначение" id="59">
+											<DataPath>Items.МетодыLLM.CurrentData.Параметры.Значение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МетодыLLMПараметрыЗначениеКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="МетодыLLMПараметрыЗначениеРасширеннаяПодсказка" id="61"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Метод" id="4">
+							<DataPath>Метод</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МетодКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="МетодРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<UsualGroup name="Группа5" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Промт</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<InputField name="Промт" id="7">
+									<DataPath>Промт</DataPath>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПромтКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ПромтРасширеннаяПодсказка" id="9"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДиалог" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>диалог</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа диалог</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДиалогРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="76">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="77"/>
+							<ChildItems>
+								<UsualGroup name="Группа7" id="92">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="93"/>
+									<ChildItems>
+										<UsualGroup name="Группа6" id="85">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="86"/>
+											<ChildItems>
+												<InputField name="МоделиСервера" id="87">
+													<DataPath>МоделиСервера</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текущая модель</v8:content>
+														</v8:item>
+													</Title>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="МоделиСервераКонтекстноеМеню" id="88"/>
+													<ExtendedTooltip name="МоделиСервераРасширеннаяПодсказка" id="89"/>
+												</InputField>
+												<InputField name="РежимРаботы" id="94">
+													<DataPath>РежимРаботы</DataPath>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Вопросы</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Вопросы</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Чат</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Чат</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="РежимРаботыКонтекстноеМеню" id="95"/>
+													<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="96"/>
+												</InputField>
+												<InputField name="ТекстВопроса" id="10">
+													<DataPath>ТекстВопроса</DataPath>
+													<MultiLine>true</MultiLine>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ТекстВопросаКонтекстноеМеню" id="11"/>
+													<ExtendedTooltip name="ТекстВопросаРасширеннаяПодсказка" id="12"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа2" id="81">
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="82"/>
+											<ChildItems>
+												<Button name="ВопросКМодели" id="90">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ВопросКМодели</CommandName>
+													<ExtendedTooltip name="ВопросКМоделиРасширеннаяПодсказка" id="91"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<TextDocumentField name="ОтветТекст" id="64">
+									<DataPath>ОтветТекст</DataPath>
+									<ContextMenu name="ОтветТекстКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ОтветТекстРасширеннаяПодсказка" id="66"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.БотLLM</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Метод" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Промт" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Промт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстВопроса" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст вопроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветМодели" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ модели</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МетодыLLM" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Методы LLM</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипЗапроса" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип запроса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Путь" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Параметры" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<AdditionalColumns table="МетодыLLM.Параметры">
+					<Column name="ИмяПараметра" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя параметра</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Обязательный" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Обязательный</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Значение" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Значение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипЗапроса" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветТекст" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверLLM" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер LLM</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СерверыLLM</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МоделиСервера" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модели сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Спросить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спросить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спросить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Спросить</Action>
+		</Command>
+		<Command name="ВопросКМодели" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос к модели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос к модели</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВопросКМодели</Action>
+		</Command>
+	</Commands>
+</Form>
