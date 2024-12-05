@@ -29,6 +29,8 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Form>ДоступныеМодели</Form>
+			<Form>ФормаИнфо</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

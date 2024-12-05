@@ -245,11 +245,8 @@
 			<CommonModule>КоннекторHTTP</CommonModule>
 			<CommonModule>ВзаимодействиеСLLM</CommonModule>
 			<Catalog>СерверыLLM</Catalog>
-			<Catalog>Промты</Catalog>
 			<Enum>ТипыСерверовLLM</Enum>
 			<DataProcessor>БотLLM</DataProcessor>
-			<DataProcessor>БазовыеНастройки</DataProcessor>
-			<DataProcessor>ЧатLLM</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

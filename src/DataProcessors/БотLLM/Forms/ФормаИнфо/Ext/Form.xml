@@ -6,7 +6,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>1 настройка сервера LLM</v8:content>
+					<v8:content>Настройка сервера LLM</v8:content>
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
@@ -52,13 +52,24 @@
 					<ContextMenu name="Декорация4КонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="14"/>
 				</LabelDecoration>
+				<LabelDecoration name="Декорация5" id="15">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://ollama.com</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="Декорация5КонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="17"/>
+				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DataProcessorObject.БазовыеНастройки</v8:Type>
+				<v8:TypeId>5de5c2e2-cb39-4709-807d-12ac1bfffbd9</v8:TypeId>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>

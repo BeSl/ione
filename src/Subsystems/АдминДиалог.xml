@@ -17,9 +17,9 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БотLLM</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БазовыеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a31b78df-22f9-49e5-8c6f-d9e664c00740</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СерверыLLM</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Промты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">12d654d6-77e2-49c6-a33a-a13764ff8c96</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
