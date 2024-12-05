@@ -244,6 +244,7 @@
 			<Subsystem>АдминДиалог</Subsystem>
 			<CommonModule>КоннекторHTTP</CommonModule>
 			<CommonModule>ВзаимодействиеСLLM</CommonModule>
+			<CommonModule>ХромаБД</CommonModule>
 			<Catalog>СерверыLLM</Catalog>
 			<Enum>ТипыСерверовLLM</Enum>
 			<DataProcessor>БотLLM</DataProcessor>

@@ -56,9 +56,7 @@
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
-			<Type>
-				<v8:TypeId>5de5c2e2-cb39-4709-807d-12ac1bfffbd9</v8:TypeId>
-			</Type>
+			<Type/>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 		<Attribute name="ДоступныеМодели" id="2">
