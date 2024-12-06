@@ -18,6 +18,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БотLLM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СерверыLLM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыОбработкиСообщений</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

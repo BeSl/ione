@@ -247,6 +247,7 @@
 			<CommonModule>ХромаБД</CommonModule>
 			<Catalog>СерверыLLM</Catalog>
 			<Enum>ТипыСерверовLLM</Enum>
+			<Enum>СтатусыОбработкиСообщений</Enum>
 			<DataProcessor>БотLLM</DataProcessor>
 		</ChildObjects>
 	</Configuration>
